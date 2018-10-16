@@ -1,0 +1,627 @@
+<!DOCTYPE html>
+<html>
+<meta charset="UTF-8">
+<title>Sophia Atif</title>
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+<link rel="icon" href="/favicon.ico" type="image/gif" sizes="16x16">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Nunito:700" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Roboto:300" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Roboto:100" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Dosis" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300i" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Roboto:300i" rel="stylesheet">
+
+<link rel="stylesheet" href="style.css">
+<script type="text/javascript" src="modal.js"></script>
+
+
+<script type="text/javascript" src="toggleSection.js"></script>
+<header>
+    <nav>
+        <a id="phone" href="javascript:void(0)" onmousedown="modal('phoneModal')"><img src="images/phonesvg.svg" alt="contactPhone"></a>
+        <a id="email" href="mailto:sophia.sabir@gmail.com"><img src="images/email.svg" alt="contactPhone"></a>  
+        <a id="behance" href="https://www.behance.net/sophiasabi70ce"><img src="images/behance.svg" alt="contactPhone"></a>  
+        <a id="linkedin" href="https://www.linkedin.com/in/sophia-atif-15322121/"><img src="images/linkedin.svg" alt="contactPhone"></a>
+    </nav>
+</header>
+<body>
+        <div id="phoneModal" class="modal">         
+            <div class="modal-content">
+                <span class="close" onmousedown="modal('close')">&times;</span>
+                <p align="center">0046-722-587-753</p>
+            </div>
+        </div>
+    
+            
+    <div class="nametitle initialshead">
+            <canvas id="canvas"></canvas>
+            <script type="text/javascript" src="https://res.cloudinary.com/ossamarafique/raw/upload/v1533889440/imageparticles.js"></script>
+            <script type="text/javascript">
+            ImageParticles.initialize('canvas','data:image/png;base64,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' ,densityPara=20,produceDistancePara=28,baseRadiusPara=2,maxLineThicknessPara=1,reactionSensitivityPara=8,lineThicknessPara=1);
+            </script>
+        <h2 align="right">Hi! I'm</h2>
+        <img src="images/SophiaAtif_portfolio.png" alt="">
+        <h2 align="center">A UX Designer based in Gothenburg</h2>
+        <div class="moreaboutme"><p>Find out more</p><a href="#aboutme"> about me </a><p>and </p><a href="#workdiv">my work</a></div>
+        <!-- <div class="arrow">
+                <i></i>
+        </div> -->
+    </div>
+    <div id="work" class="work">
+        <h2 class="sectiontitle">WORK</h2>
+        <div id="workdiv" class="projectrows">
+            <!-- <div class="gridrow"> -->
+               <a href="toys.html"><div class="projectbox" id="sustainabletoys">
+                    <!-- <img src="images/SustainableToy.png" alt="sustainable toys"> -->
+                    
+                    <img src="images/SustainableToy_remake3.png" alt="sustainable toys">
+                    <div class="projecthoverText">
+                         <h2>Rent Kids Items</h2>
+                    </div>
+                </div></a>
+               <a href="cityhistory.html"><div class="projectbox" id="cityhostory">
+                    <img src="images/cityHistory.png" alt="City hostory">
+                    <div class="projecthoverText">
+                    <h2>Biography of a Street</h2>
+                    </div>
+                </div></a>
+               <a href="VUI.html"> <div class="projectbox" id="VUI Self Driving">
+                    <img src="images/VUI_SelfDriving.png" alt="VUI Self Driving">
+                    <div class="projecthoverText">
+                        <h2>VUI for Self Driving Cars</h2>
+                    </div>
+                </div></a>
+             <!-- </div> -->
+             <!-- <div class="gridrow"> -->
+                <!-- <div class="projectbox" id="futurelaundry">
+                    <img src="images/Laundry.png" alt="future laundry">
+                    <div class="projecthoverText">
+                        <h2>Future Laundry</h2>
+                    </div>
+                </div>
+                <div class="projectbox" id="smarthome">
+                    <img src="images/smarthomecontrol.png" alt="smart home">
+                    <div class="projecthoverText">
+                        <h2>Smart Home</h2>
+                    </div>
+                </div>
+                <div class="projectbox" id="booktrailer">
+                    <img src="images/bookTrailer.png" alt="book trailer">
+                    <div class="projecthoverText">
+                        <h2>Book Trailer</h2>
+                    </div>
+                </div> -->
+             <!-- </div> -->
+             <!-- <div class="gridlastrow"> -->
+                <!-- <div class="projectbox" id="cityGuide">
+                        <img src="images/cityGuide.png" alt="city Guide">
+                        <div class="projecthoverText">
+                            <h2>City Guide</h2>
+                        </div>
+                    </div>
+                <div class="projectbox" id="virtualdoctor">
+                    <img src="images/VirtualDoc.png" alt="virtual doctor">
+                    <div class="projecthoverText">
+                        <h2>Early Stage Diagnose</h2>
+                    </div> -->
+                <!-- </div> -->
+            </div>
+        </div>
+    </div>
+    <div id="aboutme" class="aboutme">
+        <h2 class="sectiontitle" id="aboutmetitle">About Me</h2>
+        <div class="aboutmecontent">
+            <div class="aboutmemainsection">
+                <img id="myphoto" src="images/Sophia_Atif.png" alt="">
+            </div>
+        <div class="aboutmemainsection">
+            <div class="textContent">
+                <div class="subsectiontitle colored">
+                    <h2 class="myname">Sophia Atif</h2>
+                    <p>Interaction Designer, UI/UX</p>
+                </div>
+                <div class="contacts">
+                    <div class="contactcell">
+                        <img src="images/ResumeEmail.png" alt="">
+                        <p>sophia.sabir@gmail.com</p>
+                    </div>
+                    <div class="contactcell">
+                        <img src="images/phone.png" alt="">
+                        <p>0046-722-587-753</p>
+                    </div>
+                    <div class="contactcell">
+                        <img src="images/home.png" alt="">
+                        <p>Hisings Backa, Gothenburg</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+    </div>
+
+    <div class="experience">
+        <div class="sectiontitle" id="workandeducation_title">
+            Education and Work Experience
+        </div>
+        <div class="togglesection">
+           <div id="switchTimeline" class="Switchtext">Timeline</div>
+            <div class="toggleswitch">
+                <label id="switchlabel" class="form-switch" onmousedown="toggleSection()">
+                    <input type="checkbox">
+                    <i></i>
+                </label>
+            </div>
+            <div id="swicthResume"class="Switchtext">Resume</div>
+        </div>
+        <div id="timeline">
+        <div class="timeline">
+            <div class="contentleft">
+                <h2>2018</h2>
+            </div>
+            <div class="contentrow">
+                <div class="containerlefty left">
+                    <div class="contentleft">
+                        <p>June</p>
+                    </div>
+                </div>
+                <div class="container right">
+                    <div class="content right">
+                        <img src="images/education.png" alt="">
+                        <p>Comleted M.Sc Interaction Design and Technologies</p>
+                    </div>
+                </div>
+            </div>
+            <div class="contentrow">
+                <div class="containerlefty left">
+                    <div class="contentleft">
+                        <p>January</p>
+                    </div>
+                </div>
+            <div class="container right">
+                <div class="content right">
+                    <img src="images/work.png" alt="">
+                    <p>Started Thesis Work at Cybercom Group</p>
+                </div>
+            </div>
+            </div>
+            <div class="contentleft">
+                <h2>2016</h2>
+            </div>  
+            <div class="contentrow">
+                <div class="containerlefty left">
+                    <div class="contentleft">
+                        <p>September</p>
+                    </div>
+                </div>
+                <div class="container right">
+                    <div class="content right">
+                        <img src="images/education.png" alt="">
+                        <p>Started Studying M.Sc Interaction Design and Technologies at Chalmers</p>
+                    </div>
+                </div>
+            </div>
+            <div class="contentrow">
+                <div class="containerlefty left">
+                    <div class="contentleft">
+                        <p>July</p>
+                    </div>
+                </div>
+                <div class="container right">
+                    <div class="content right">
+                        <img src="images/education.png" alt="">
+                        <p>Left Job As Software Testing Automation Engineer at Desault Systems (Duration: 9 Months)</p>
+                    </div>
+                </div>
+            </div>
+            <div class="contentrow">
+                    <div class="containerlefty left">
+                        <div class="contentleft">
+                            <p>March</p>
+                        </div>
+                    </div>
+                    <div class="container right">
+                        <div class="content right">
+                            <img src="images/moved.png" alt="">
+                            <p>Moved To Gothenburg</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="contentleft">
+                    <h2>2015</h2>
+                </div>  
+                <div class="contentrow">
+                    <div class="containerlefty left">
+                        <div class="contentleft">
+                            <p>November</p>
+                        </div>
+                    </div>
+                    <div class="container right">
+                        <div class="content right">
+                            <img src="images/work.png" alt="">
+                            <p>Started working as Software Test Automation Engineer at BIOVIA Desault Systems</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="contentrow">
+                    <div class="containerlefty left">
+                        <div class="contentleft">
+                            <p>October</p>
+                        </div>
+                    </div>
+                    <div class="container right">
+                        <div class="content right">
+                            <img src="images/moved.png" alt="">
+                            <p>Moved to Stockholm</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="contentrow">
+                    <div class="containerlefty left">
+                        <div class="contentleft">
+                            <p>September</p>
+                        </div>
+                    </div>
+                    <div class="container right">
+                        <div class="content right">
+                            <img src="images/moved.png" alt="">
+                            <p>Moved to Sweden(Gothenburg)</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="contentrow">
+                    <div class="containerlefty left">
+                        <div class="contentleft">
+                            <p>August</p>
+                        </div>
+                    </div>
+                    <div class="container right">
+                        <div class="content right">
+                            <img src="images/work.png" alt="">
+                            <p>Left Job as Software Test Automation Engineer at Target Systems (Duration: 5 Months)</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="contentrow">
+                    <div class="containerlefty left">
+                        <div class="contentleft">
+                            <p>June</p>
+                        </div>
+                    </div>
+                    <div class="container right">
+                        <div class="content right">
+                            <img src="images/education.png" alt="">
+                            <p>Completed Coursework Masters in Innovative technologies</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="contentrow">
+                    <div class="containerlefty left">
+                        <div class="contentleft">
+                            <p>April</p>
+                        </div>
+                    </div>
+                    <div class="container right">
+                        <div class="content right">
+                            <img src="images/work.png" alt="">
+                            <p>Started Working as Software Test Automation Engineer at Target Systems</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- <div class="contentrow">
+                    <div class="containerlefty left">
+                        <div class="contentleft">
+                            <p>January</p>
+                        </div>
+                    </div>
+                    <div class="container right">
+                        <div class="content right">
+                            <img src="images/wedding.png" alt="">
+                            <p>Got Married</p>
+                        </div>
+                    </div>
+                </div> -->
+            <div class="contentleft">
+                <h2>2014</h2>
+            </div>  
+            <div class="contentrow">
+                <div class="containerlefty left">
+                    <div class="contentleft">
+                        <p>December</p>
+                    </div>
+                </div>
+                <div class="container right">
+                    <div class="content right">
+                        <img src="images/work.png" alt="">
+                        <p>Left Job as SoftwareQuality Assurance Engineer at AKDN (Duration: 3 Years)</p>
+                    </div>
+                </div>
+            </div>
+            <div class="contentrow">
+                <div class="containerlefty left">
+                    <div class="contentleft">
+                        <p>January</p>
+                    </div>
+                </div>
+                <div class="container right">
+                    <div class="content right">
+                        <img src="images/education.png" alt="">
+                        <p>Started Studying Master in Innovative technologies</p>
+                    </div>
+                </div>
+            </div>
+            <div class="contentleft">
+                <h2>2012</h2>
+            </div>  
+                <div class="contentrow">
+                    <div class="containerlefty left">
+                        <div class="contentleft">
+                            <p>January</p>
+                        </div>
+                    </div>
+                    <div class="container right">
+                        <div class="content right">
+                            <img src="images/work.png" alt="">
+                            <p>Started Working as SoftwareQuality Assurance Engineer at AKDN</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="contentleft">
+                    <h2>2011</h2>
+                </div>  
+                    <div class="contentrow">
+                        <div class="containerlefty left">
+                            <div class="contentleft">
+                                <p>December</p>
+                            </div>
+                        </div>
+                        <div class="container right">
+                            <div class="content right">
+                                <img src="images/work.png" alt="">
+                                <p>Left Job as Software Engineer at GameView Studios (Duration: 9 Months)</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="contentrow">
+                        <div class="containerlefty left">
+                            <div class="contentleft">
+                                <p>June</p>
+                            </div>
+                        </div>
+                        <div class="container right">
+                            <div class="content right">
+                                <img src="images/work.png" alt="">
+                                <p>Started Working as Software Engineer at GameView Studios</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="contentrow">
+                        <div class="containerlefty left">
+                            <div class="contentleft">
+                                <p>May</p>
+                            </div>
+                        </div>
+                        <div class="container right">
+                            <div class="content right">
+                                <img src="images/education.png" alt="">
+                                <p>Graduated in Bachelors of Computer Science from NUST, Pakistan</p>
+                            </div>
+                        </div>
+                    </div>
+ 
+                        <div class="contentrow">
+                            <div class="containerlefty left">
+                                <div class="contentleft">
+                                    <h2 align='right'>2006</h2>
+                                </div>
+                            </div>
+                            <div class="container right">
+                                <div class="content right">
+                                    <img src="images/education.png" alt="">
+                                    <p>Graduated from High School</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="contentrow">
+                                <div class="containerlefty left">
+                                    <div class="contentleft">
+                                        <h2>1989</h2>
+                                    </div>
+                                </div>
+                                <div class="container right">
+                                    <div class="content right">
+                                        <img src="images/education.png" alt="">
+                                        <p>Born</p>
+                                    </div>
+                                </div>
+                            </div>
+        </div></div>
+        <div class="resumeview" id="resumeSection" >
+            <div class="rmainsection" id="worksection">
+                <div class="resumeimage"><img src="images/work.png" alt=""></div>
+                <div class="resumerow">
+                    <div class="resumeleft">
+                        <h3>Cybercom</h3>
+                        <p class="jobtitle">Masters Thesis Student</p>
+                        <p class="jobduration">Jan 2018 - Jun 2018</p>
+                    </div>
+                    <div class="resumeright">
+                        <p class="resumediscription">Design and development of Immersive User experience centered towards raising awareness for sustainable modes of transportation.</p>
+                        <p class="desctitle">Process</p>
+                        <p class="resumediscription">
+                            <ul>                              
+                               <li>Speculative Design</li>
+                               <li> Lo-fi and Hi-fi prototyping for Oculus</li>
+                               <li> User Journeys</li>
+                               <li> Usability Testing</li>
+                            </ul>
+                        </p>
+                        <p class="desctitle">Technologies and Skills</p>
+                        <p class="resumediscription">
+                            <ul>
+                                <li> C# Development in Unity</li>
+                                <li> 360° Virtual Tour</li>
+                                <li> Photoshop Sketching</li>
+                            </ul>
+                        </p>
+                    </div>
+                </div>
+                <div class="resumerow">
+                    <div class="resumeleft">
+                        <h3>Dassault Systèmes BIOVIA</h3>
+                        <p class="jobtitle">Software Testing Automation Engineer</p>
+                        <p class="jobduration">Nov 2016 - Jul 2017 </p>
+                    </div>
+                    <div class="resumeright">
+                        <p class="resumediscription">My responsibilities at BIOVIA included management of Test Automation, maintenance of existing tests and writing new ones. My primary job was to manage the testing server and all the nodes of various operating systems, these nodes were used to run the tests every night. Keeping the testing monitor green was my responsbility. </p>
+                        <p class="desctitle">Process</p>
+                        <p class="resumediscription">
+                            <ul>                           
+                                <li>Quality Assurance</li>
+                                <li>Test Automation</li>
+                                <li>Selenium Webdriver</li>
+                            </ul>
+                        </p>
+                        <p class="desctitle">Technologies and Skills</p>
+                        <p class="resumediscription">
+                            <ul>
+                                <li>Selenium Webdriver using C#</li>
+                                <li>Bash scripting</li>
+                            </ul>
+                        </p>
+                    </div>
+                </div>
+                <div class="resumerow">
+                    <div class="resumeleft">
+                        <h3>Target Systems</h3>
+                        <p class="jobtitle">Software Testing Automation Engineer</p>
+                        <p class="jobduration">Apr 2015 - Aug 2015 </p>
+                    </div>
+                    <div class="resumeright">
+                        <p class="resumediscription">I started at target systems as manual quality assurance person. However after analysing their system it was clear that they needed to automate their smoke tests as it was taking a lot of time of the testers to test the basic CRM systme everytime a new feature was released. I created the framework for automated tests using slenium webdriver.  </p>
+                        <p class="desctitle">Process</p>
+                        <p class="resumediscription">
+                            <ul>                           
+                                <li>Quality Assurance</li>
+                                <li>Test Automation</li>              
+                            </ul>
+                        </p>
+                        <p class="desctitle">Technologies and Skills</p>
+                        <p class="resumediscription">
+                            <ul>
+                                <li>Selenium Webdriver using C#</li>
+                                <li>Bash scripting</li>
+                            </ul>
+                        </p>
+                    </div>
+                </div>
+                <div class="resumerow">
+                    <div class="resumeleft">
+                        <h3>AKDN</h3>
+                        <p class="jobtitle">Software Quality Assurance Engineer</p>
+                        <p class="jobduration">Jan 2012 - Jan 2015</p>
+                    </div>
+                    <div class="resumeright">
+                        <p class="resumediscription">During my 3 years at AKDN, I worked on several projects. The highlights of my time there are;
+                            <ul>
+                                <li>Designed in house web portal for in house learning management system</li>
+                                <li>QTP scripting for automated testing for microfinance banking system. The MF system is deployed in microfinance banks in various developing counties</li>
+                                <li>Testing of desktop, web and mobile using white box, grey box, load and performance testing using various tools</li>
+                                <li>Ensuring the product's high user end experience by creation and maintenance of User Stories and Test Cases</li>
+                                <li>Close Coordination with the development and support team to fulfill the client’s requirements and maintain the application requirement</li>
+                                <li>Creation, updating and maintenance of the Documentation throughout the SDLC in accordance with the software processes</li>
+                            </ul>
+                        </p>
+                        <p class="desctitle">Process</p>
+                        <p class="resumediscription">
+                            <ul>                           
+                                <li>Quality Assurance</li>
+                                <li>Test Automation</li>              
+                            </ul>
+                        </p>
+                        <p class="desctitle">Technologies and Skills</p>
+                        <p class="resumediscription">
+                            <ul> 
+                                <li>Black box, white box testing</li>
+                                <li>HP Quality Test Professional</li>
+                                <li>VB Scripting, Bash scripting</li>
+                            </ul>
+                        </p>
+                    </div>
+                </div>
+                <div class="resumerow">
+                <div class="resumeleft">
+                    <h3>GameView Studios</h3>
+                    <p class="jobtitle">Software Engineer</p>
+                    <p class="jobduration">Jun 2011 - Dec 2011</p>
+                </div>
+                <div class="resumeright">
+                    <p class="resumediscription">I began my career by working as a software engineer for a game development company. My responsibilities there includeded developing features for the social game TapMall. 
+                        I worked on the module of Quests. 
+                    </p>
+                    <p class="desctitle">Process</p>
+                    <p class="resumediscription">
+                        <ul>                           
+                            <li>Quality Assurance</li>
+                            <li>Test Automation</li>              
+                        </ul>
+                    </p>
+                    <p class="desctitle">Technologies and Skills</p>
+                    <p class="resumediscription">
+                        <ul> 
+                            <li>Black box, white box testing</li>
+                            <li>HP Quality Test Professional</li>
+                            <li>Bash scripting</li>
+                        </ul>
+                    </p>
+                </div>
+            </div>
+            </div>
+            <div class="rmainsection" id="educationsection">
+            <div class="resumeimage"><img src="images/education.png" alt=""></div>
+                <div class="resumerow">
+                    <div class="resumeleft">
+                        <p class="jobtitle">Graduate School</p>
+                        <p class="jobduration">Nov 2016 - Jul 2017</p>
+                    </div>
+                    <div class="resumeright">
+                        <h3>M.Sc Interaction Design</h3>
+                        <p class="schooltitle">Chalmers University of Technology, gothenburg, Sweden</p>
+                    </div>
+                </div>
+                <div class="resumerow">
+                    <div class="resumeleft">
+                        <p class="jobtitle">Graduate School</p>
+                        <p class="jobduration">Jan 2014 - Aug 2015</p>
+                    </div>
+                    <div class="resumeright">
+                        <h3>M.Sc in Innovative Technologies</h3>
+                        <p class="schooltitle">NUST, Islamabad, Pakistan</p>
+                    </div>
+                </div>
+                <div class="resumerow">
+                    <div class="resumeleft">
+                        <p class="jobtitle">Undergraduate School</p>
+                        <p class="jobduration">Sep 2007 - Jun  2011</p>
+                    </div>
+                    <div class="resumeright">
+                        <h3>B.Sc Computer Science</h3>
+                        <p class="schooltitle">NUST, Islamabad, Pakistan</p>
+                    </div>
+                </div>
+            </div>
+            <div class="rmainsection" id="skillssection">
+                
+            </div>
+        </div>
+    </div>
+            
+
+
+    
+</body>
+</html>
